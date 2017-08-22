@@ -19,6 +19,8 @@ Plug 'dracula/vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'vim-scripts/Solarized'
 Plug 'vim-scripts/gruvbox'
+Plug 'mfukar/robotframework-vim'
+Plug 'yuttie/hydrangea-vim'
 call plug#end()
 
 set tabstop=4
@@ -42,7 +44,7 @@ syntax on
 set relativenumber
 set hlsearch
 set background=dark
-colorscheme gruvbox
+colorscheme hydrangea 
 
 " Easymotion
 
@@ -62,8 +64,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
  " Syntastic checking
 
- set statusline+=%#warningmsg#
- set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_cpp_checkers = ['avrgcc', 'clang_check', 'gcc']
